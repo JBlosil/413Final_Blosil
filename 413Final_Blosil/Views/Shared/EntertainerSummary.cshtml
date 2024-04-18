@@ -1,0 +1,10 @@
+@{
+}
+
+@model Entertainer
+
+<div class="card m-1 p-1">
+    <h4>@Model.EntStageName
+        <span class="float-end"><a class="btn btn-info" asp-controller="Home" asp-action="EntertainerDetails" asp-route-entertainer_ID="@Model.EntertainerID">Details</a></span></h4>
+</div>
+

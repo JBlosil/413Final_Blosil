@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Add New Entertainer";
+}
+
+@model Entertainer
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="AddEntertainer" method="post" class="mt-4">
+    <div class="form-group">
+        <label asp-for="EntStageName" class="form-label">Stage Name</label>
+        <input asp-for="EntStageName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntSsn" class="form-label">Social Security Number</label>
+        <input asp-for="EntSsn" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntStreetAddress" class="form-label">Street Address</label>
+        <input asp-for="EntStreetAddress" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntCity" class="form-label">City</label>
+        <input asp-for="EntCity" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntState" class="form-label">State</label>
+        <input asp-for="EntState" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntZipCode" class="form-label">Zip Code</label>
+        <input asp-for="EntZipCode" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntPhoneNumber" class="form-label">Phone Number</label>
+        <input asp-for="EntPhoneNumber" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntWebPage" class="form-label">Web Page</label>
+        <input asp-for="EntWebPage" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EntEmailAddress" class="form-label">Email Address</label>
+        <input asp-for="EntEmailAddress" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateEntered" class="form-label">Date Entered</label>
+        <input asp-for="DateEntered" class="form-control" type="date" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

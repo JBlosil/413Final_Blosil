@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Entertainers";
+}
+
+@model _413Final_Blosil.Models.ViewModels.EntertainersListViewModel
+
+<h1>Entertainers</h1>
+
+@foreach (Entertainer e in Model.Entertainers)
+{
+    <partial name="EntertainerSummary" model="e"/>
+}
+
+<a class="btn btn-info" asp-controller="Home" asp-action="AddEntertainer">Add an entertainer</a>
